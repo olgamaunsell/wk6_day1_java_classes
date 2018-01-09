@@ -4,9 +4,8 @@ public class EightBall {
 
     private ArrayList<String> answers;
 
-    public EightBall(){
-        this.answers = new ArrayList<>();
-
+    public EightBall(ArrayList<String> answers){
+        this.answers = answers;
     }
 
     public void addAnswer(String answer) {

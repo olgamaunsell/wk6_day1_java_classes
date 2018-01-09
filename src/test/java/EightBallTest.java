@@ -1,16 +1,20 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.Assert.assertEquals;
 
 public class EightBallTest {
 
     EightBall eightBall;
+    ArrayList<String> answers;
 
     @Before
     public void before(){
-        eightBall = new EightBall();
-
+        answers = new ArrayList<>();
+        answers.add("Yes!");
+        eightBall = new EightBall(answers);
     }
 
     @Test
